@@ -13,6 +13,15 @@
 
 実際の道路でも標識は進行方向に対して左側に設置されるため、元画像から左上を切り出す。
 
-次に、SelectiveSearchを使用して標識が存在すると思わしき候補領域を抜き出す。
+次に、SelectiveSearch※を使用して標識が存在すると思わしき候補領域を抜き出す。
 
 最後に、事前にGTRSBのデータセットで学習させたVGG19のモデルを抜き出した領域に適応する。設定した閾値を超えなかった場合は標識は存在しないと判定する。
+
+<br><br>
+※今回SelectiveSearchを行うにあたって、下記のライブラリを使用した。<br>
+https://github.com/AlpacaDB/selectivesearch <br>
+LICENSE:
+Copyright (c) 2015-2016 AlpacaDB
+Copyright (c) 2016 Oussama ENNAFII
+
+https://opensource.org/licenses/mit-license.php
