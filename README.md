@@ -27,3 +27,5 @@ Copyright (c) 2015-2016 AlpacaDB
 Copyright (c) 2016 Oussama ENNAFII
 
 https://opensource.org/licenses/mit-license.php
+
+※2レポート参照
