@@ -17,8 +17,10 @@
 
 最後に、事前にGTRSBのデータセットで学習させたVGG19のモデルを抜き出した領域に適応する。設定した閾値を超えなかった場合は標識は存在しないと判定する。
 
+他の物体検出(YOLO,SSD)と比較して精度は低いもの※2となったが、画像をアノテーションした学習データを用意する必要が無いので、手軽さで言えばこのシステムに利点があると思われる。
+
 <br><br>
-※今回SelectiveSearchを行うにあたって、下記のライブラリを使用した。<br>
+※1今回SelectiveSearchを行うにあたって、下記のライブラリを使用した。<br>
 https://github.com/AlpacaDB/selectivesearch <br>
 LICENSE:
 Copyright (c) 2015-2016 AlpacaDB
